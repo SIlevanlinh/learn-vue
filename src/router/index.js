@@ -1,21 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import FilterDemo from '@/components/FilterDemo.vue'
-import RestFulDemo from '@/components/RestFulDemo.vue'
+import FilterDemo from '@/components/FilterDemo'
+import RestFulDemo from '@/components/RestFulDemo'
 
 Vue.use(VueRouter)
 
 export default new VueRouter({
     routes: [
         {
-            path: '/',
-            name: 'home',
+            path: '/filterdemo',
+            name: 'FilterDemo',
             component: FilterDemo
         },
         {
             path: '/restfuldemo',
-            name: 'restfuldemo',
+            name: 'RestFullDemo',
             component: RestFulDemo
         }
     ]

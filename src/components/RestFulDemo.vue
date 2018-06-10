@@ -1,10 +1,11 @@
 <template>
     <div class="restful-demo">
-        <ul id="example-1">
-        <li v-for="person in people" :key="person.id">            
-            <img :src="person.avatar">
-            {{ person.name }}
-        </li>
+        <h1>RestFul Demo</h1>
+        <ul>
+            <li v-for="person in people" :key="person.id">            
+                <img :src="person.avatar">
+                {{ person.name }}
+            </li>
         </ul>
     </div>
 </template>
@@ -34,5 +35,7 @@ export default {
     }
 }
 </script>
+
+
 
 
